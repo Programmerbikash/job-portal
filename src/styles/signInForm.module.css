@@ -33,3 +33,20 @@
   padding: 0 2px;
   background: #fff;
 }
+
+/* Bottom Part */
+.bottomInputField{
+  position: relative;
+}
+.bottomInputField button{
+   width: 100%;
+  height: 60px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+  border: 1px solid #0F151A;
+  background: transparent;
+  color: #000000;
+  outline: none;
+  cursor: pointer;
+}
