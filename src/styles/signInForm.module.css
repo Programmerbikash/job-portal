@@ -1,0 +1,35 @@
+.inputField{
+  position: relative;
+}
+.inputField input{
+   width: 100%;
+  height: 60px;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 0 15px;
+  border: 1px solid #0F151A;
+  background: transparent;
+  color: #fff;
+  outline: none;
+}
+.inputField label{
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #0F151A;
+  font-size: 19px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.input:focus{
+  border: 2px solid #0F151A;
+}
+.input:focus ~ label,
+.input:valid ~ label{
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: #fff;
+}

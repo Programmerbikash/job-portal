@@ -1,0 +1,9 @@
+.menu{
+    content: '';
+    width: 1px;
+    height: 60%;
+    background-color: #c8c8c8;
+    top: 20%;
+    right: 0;
+    position: absolute;
+}
