@@ -1,7 +1,9 @@
 // components/ContactForm.tsx
 import React from "react";
-import { useForm, Controller, SubmitHandler } from "react-hook-form";
+import { useForm, SubmitHandler } from "react-hook-form";
 import styles from '../../styles/signInForm.module.css'
+import { FcGoogle } from "react-icons/fc";
+import { AiFillApple } from "react-icons/ai";
 
 interface IFormInput {
   emailAddress: string;
@@ -22,7 +24,7 @@ const RegisterForm = () => {
   return (
     <form
       style={{ boxShadow: "0px 0px 15px #d9dbdd" }}
-      className="bg-white p-[50px] my-16 max-w-[600px] rounded-md"
+      className="bg-white p-[50px] my-16 max-w-[600px] rounded-md mx-auto"
       onSubmit={handleSubmit(onSubmit)}
     >
       <div>
@@ -57,6 +59,37 @@ const RegisterForm = () => {
       >
         Continue
       </button>
+      <div className="flex flex-row justify-center items-center my-[25px]">
+        <hr className="border-1 border-[#DEDEDE] w-full" />
+        <div className="mx-2 text-base font-bold">or</div>
+        <hr className="border-1 border-[#DEDEDE] w-full" />
+      </div>
+      <div className={`${styles.bottomInputField} my-[15px]`}>
+        <button
+          type="submit"
+          className="px-4 py-2 text-white text-base font-bold rounded w-full h-12 flex items-center justify-center"
+        >
+          <FcGoogle className="text-3xl mr-1" />
+          Continue with Google
+        </button>
+      </div>
+      <div className={`${styles.bottomInputField} my-[15px]`}>
+        <button
+          type="submit"
+          className="px-4 py-2 text-white text-base font-bold rounded w-full h-12 flex items-center justify-center"
+        >
+          <AiFillApple className="text-3xl mr-1" />
+          Continue with Apple
+        </button>
+      </div>
+      <div className={`${styles.bottomInputField} my-[15px]`}>
+        <button
+          type="submit"
+          className="px-4 py-2 text-white text-base font-bold rounded w-full h-12"
+        >
+          Sign in without a password
+        </button>
+      </div>
     </form>
   );
 };

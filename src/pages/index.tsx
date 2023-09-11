@@ -1,7 +1,5 @@
 import BannerForm from "@/components/Home/Banner/BannerForm";
 import Navbar from "@/components/Home/Navbar/Navbar";
-import RegisterForm from "@/components/SignInSignUp/RegisterForm";
-import SignInForm from "@/components/SignInSignUp/SignInForm";
 
 export default function Home() {
   return (
@@ -16,8 +14,6 @@ export default function Home() {
           {`Find a job you'll love`}
         </div>
         <BannerForm />
-        <SignInForm />
-        <RegisterForm />
         <h1 className="text-white font-bold text-2xl text-center">Search 196,588 new jobs - 878 added in the last 24 hours</h1>
       </div>
     </div>
