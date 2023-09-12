@@ -16,7 +16,7 @@ const BannerForm = () => {
     handleSubmit,
     watch,
     formState: { errors },
-  } = useForm<IFormInput>();
+  } = useForm <IFormInput>();
   const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data);
 
   // console.log(watch("example"));
